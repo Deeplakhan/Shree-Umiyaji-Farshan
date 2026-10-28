@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shree Umiyaji Farshan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Shree Umiyaji Farshan (Chandukaka Gathiyawala), Gujarati farsan and snacks in Ankleshwar GIDC. Dine-in, kerbside pickup and delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Shree Umiyaji Farshan (Chandukaka Gathiyawala)","servesCuisine":"Gujarati","telephone":"+91 94286 89920","address":{"@type":"PostalAddress","streetAddress":"Shop No. 3-4, Maurya Residency, near Jaldhara Chowkdi, GIDC","addressLocality":"Ankleshwar","addressRegion":"Gujarat","postalCode":"393002","addressCountry":"IN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"26"}}
+</script>
+<link rel="stylesheet" href="shree-umiyaji.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="#home" aria-label="Shree Umiyaji Farshan, home">
+      <img class="brand-logo" src="image/unnamed-removebg-preview.png" alt="">
+      <span class="brand-copy"><b>Shree Umiyaji Farshan</b><span>Chandukaka Gathiyawala</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#menu" data-route="menu">Menu</a>
+      <a href="#about" data-route="about">About Us</a>
+      <a href="#visit" data-route="visit">Visit Us</a>
+    </nav>
+    <a class="btn primary small" href="tel:+919428689920">Call Now</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <a class="nl" href="#home">Home</a>
+  <a class="nl" href="#menu">Menu</a>
+  <a class="nl" href="#about">About Us</a>
+  <a class="nl" href="#visit">Visit Us</a>
+  <a class="btn primary" href="tel:+919428689920">Call 094286 89920</a>
+</div>
+
+<main id="main">
+
+<!-- HOME -->
+<section class="page" id="page-home" data-page="home" hidden>
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Ankleshwar GIDC · Gujarati farsan</p>
+        <h1>Farsan the way it should <em>crunch.</em></h1>
+        <p class="lead">Gathiya, fafda, jalebi and everyday Gujarati snacks, a short walk from Jaldhara Chowkdi. Sit down, pick it up, or have it brought to you.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#menu">View Menu</a>
+          <a class="btn" data-dir target="_blank" rel="noopener" href="#">Get Directions</a>
+          <a class="textlink" href="tel:+919428689920">Call Now</a>
+        </div>
+        <ul class="chips" aria-label="At a glance">
+          <li><b>4.8 ★</b> · 26 Google reviews</li>
+          <li>Freshly prepared, made to order</li>
+          <li>Dine-in · Pickup · Delivery</li>
+        </ul>
+      </div>
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="stack">
+          <figure class="pic a"><img src="image/fafda.webp" alt="" width="480" height="520"></figure>
+          <figure class="pic b"><img src="image/gathiya.webp" alt="" width="480" height="520"></figure>
+          <figure class="pic c"><img src="image/jalebi.webp" alt="" width="480" height="520"></figure>
+          <figure class="pic d"><img src="image/mixture.webp" alt="" width="480" height="520"></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Why people come back</p><h2>Simple food, easy on the pocket.</h2></div>
+      <div class="values">
+        <div class="value"><h3>Well rated</h3><p>4.8 stars from 26 reviews on Google, for a counter that keeps its focus on farsan.</p></div>
+        <div class="value"><h3>Order your way</h3><p>Choose the size or number of pieces that suits you, then confirm your order directly with us.</p></div>
+        <div class="value"><h3>Your way</h3><p>Dine-in, kerbside pickup or delivery. Pick whichever fits your day.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">From the menu</p><h2>A few favourites to start with.</h2></div>
+      <div class="cards" id="previewCards"></div>
+      <div class="cta-row"><a class="btn primary" href="#menu">Explore full menu</a></div>
+    </div>
+  </div>
+
+  <div class="band section">
+    <div class="wrap rating">
+      <div class="big" aria-label="4.8 out of 5">4.8</div>
+      <div>
+        <div class="stars" id="stars" aria-hidden="true"></div>
+        <h2>26 people rated us on Google.</h2>
+        <p>Read what guests say about Shree Umiyaji Farshan and add your own.</p>
+        <div class="cta-row"><a class="btn primary" data-reviews target="_blank" rel="noopener" href="#">Read reviews on Google</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Order your way</p><h2>Three ways to get your farsan.</h2></div>
+      <div class="tiles">
+        <article class="tile"><img src="image/thepla.webp" alt="" loading="lazy"><div><h3>Dine-in</h3><p>Take a seat at the shop and eat it fresh from the counter.</p><a class="btn primary small" data-dir target="_blank" rel="noopener" href="#">Get Directions</a></div></article>
+        <article class="tile"><img src="image/samosa.webp" alt="" loading="lazy"><div><h3>Kerbside pickup</h3><p>Call ahead, drive up, and collect without leaving the road.</p><a class="btn primary small" href="tel:+919428689920">Call for pickup</a></div></article>
+        <article class="tile"><img src="image/ghee-roti.webp" alt="" loading="lazy"><div><h3>Delivery</h3><p>Get it brought to your door, straight from the menu.</p><a class="btn primary small" data-needs="zomato" data-zomato target="_blank" rel="noopener" href="#" hidden>Order on Zomato</a><a class="btn primary small" data-nozomato href="tel:+919428689920">Call to order</a></div></article>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="wrap" data-insta></div>
+  </div>
+
+  <div class="band section closing">
+    <div class="wrap">
+      <p class="eyebrow">Kem cho?</p>
+      <h2>Hungry yet?</h2>
+      <div class="cta-row"><a class="btn primary" href="tel:+919428689920">Call Now</a><a class="btn" data-dir target="_blank" rel="noopener" href="#">Get Directions</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="page" id="page-menu" data-page="menu" hidden>
+  <div class="wrap page-hero">
+    <p class="eyebrow">The menu</p>
+    <h1>Everything on the counter.</h1>
+    <p>Choose weights, pieces or servings for your favourites. Send your selection to us on WhatsApp; we will confirm availability and your bill.</p>
+  </div>
+  <div class="menu-bar">
+    <div class="wrap row">
+      <div class="seg" role="tablist" aria-label="Menu category" id="segTop">
+        <span class="pill"></span>
+        <button role="tab" id="tab-food" aria-selected="true" aria-controls="panel-food" data-tab="food">Food</button>
+        <button role="tab" id="tab-bev" aria-selected="false" aria-controls="panel-bev" data-tab="beverages">Beverages</button>
+      </div>
+      <label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/>
+        <path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search the menu" aria-label="Search the menu" autocomplete="off">
+    </label>
+    </div>
+  </div>
+  <div class="wrap menu-body">
+    <div class="panel" id="panel-food" role="tabpanel" aria-labelledby="tab-food">
+      <div class="sub-row">
+        <div class="seg" role="tablist" aria-label="Veg or Non-Veg" id="segSub">
+          <span class="pill"></span>
+          <button role="tab" aria-selected="true" data-sub="veg"><i class="dot" style="margin-right:2px"></i>Veg</button>   
+        </div>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+      <div class="cards" id="foodCards"></div>
+      <p class="empty" id="foodEmpty" hidden></p>
+    </div>
+    <div class="panel" id="panel-bev" role="tabpanel" aria-labelledby="tab-bev" hidden>
+      <div class="sub-row"><span class="count" id="countBev" aria-live="polite"></span></div>
+      <div class="cards bev-cards" id="bevCards"></div>
+      <p class="empty" id="bevEmpty" hidden>Nothing matches that search.</p>
+    </div>
+    <div class="note">
+      <p>Menu availability may vary. Please call to confirm.</p>
+      <div class="cta-row" style="margin:0"><a class="btn primary small" data-needs="zomato" data-zomato target="_blank" rel="noopener" href="#" hidden>Order on Zomato</a><a class="btn small" href="tel:+919428689920">Call Now</a></div>
+    </div>
+    <section class="order-panel" aria-labelledby="orderTitle">
+      <div class="order-head"><h2 id="orderTitle">Your order</h2><span class="count" id="cartCount" aria-live="polite">0 items</span></div>
+      <p class="order-intro">Add menu items above and send your order on WhatsApp. We will confirm availability and reply with your bill and payment details.</p>
+      <p class="cart-empty" id="cartEmpty">Your order is empty. Choose a size or piece count and add an item.</p>
+      <ul class="cart-items" id="cartItems"></ul>
+      <form id="checkoutForm" class="checkout-grid">
+        <label>Your name
+          <input id="customerName" name="name" autocomplete="name" required>
+        </label>
+        <label>Order type
+          <select id="orderType" name="orderType">
+            <option value="Pickup">Pickup</option>
+            <option value="Delivery">Delivery</option>
+          </select>
+        </label>
+        <label class="full" id="addressField" hidden>Delivery address
+          <textarea id="deliveryAddress" name="address" autocomplete="street-address" placeholder="Enter your delivery address"></textarea>
+        </label>
+        <div class="order-hint full">Prices are not shown here. After you send your order, the shop will confirm availability and send your bill and payment details in the WhatsApp chat.</div>
+      </form>
+      <a class="btn primary" id="whatsappOrder" href="#" target="_blank" rel="noopener">Place order on WhatsApp</a>
+      <p class="order-status" id="orderStatus" role="status" aria-live="polite"></p>
+    </section>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="page" id="page-about" data-page="about" hidden>
+  <div class="wrap page-hero">
+    <p class="eyebrow">About us</p>
+    <h1>Made for the neighbourhood.</h1>
+    <p>A farsan shop in Ankleshwar GIDC, known by the name Chandukaka Gathiyawala.</p>
+  </div>
+  <div class="section" style="padding-top:20px">
+    <div class="wrap split">
+      <div class="story">
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);color:var(--fg)">Farsan is the Gujarati word for savoury snacks.</h2>
+        <p>It covers the crisp, salty and spiced things people reach for with tea, on a festival morning, or on the way home. Gathiya, fafda and sev sit at the centre of that tradition.</p>
+        <p>Shree Umiyaji Farshan keeps its focus there, with a counter where you can dine in, collect at the kerb, or order delivery. Choose a suitable quantity and confirm your order with us directly.</p>
+        <p>You will find us at Maurya Residency, near Jaldhara Chowkdi in Ankleshwar GIDC.</p>
+        <div class="cta-row"><a class="btn primary" href="#menu">View Menu</a><a class="btn" href="#visit">Visit Us</a></div>
+      </div>
+      <div class="pair">
+        <div class="frame"><img src="image/rotlo.webp" alt="A thali with bajra rotlo, pickles and chutney" loading="lazy" style="object-position:center"></div>
+        <div class="frame"><img src="image/gathiya.webp" alt="Gathiya in a dark bowl" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">What we stand for</p><h2>Four things we keep simple.</h2></div>
+      <div class="principles">
+        <div class="principle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 3 5 5.5 5 9a5 5 0 0 1-10 0c0-2 1-3 2-4 .2 1.6 1 2.5 2 2.5C11 8.5 11 5.5 12 3Z"/></svg><h3>Traditional taste</h3><p>Classic Gujarati farsan, from gathiya and fafda to jalebi.</p></div>
+        <div class="principle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9.5c.6-1 1.6-1.5 3-1.5 1.700 0 2.800.8 2.800 2 0 2.500-5.800 1.500-5.800 4.500 0 1.200 1.200 2 3 2 1.400 0 2.400-.5 3-1.500M12 6v2m0 8v2"/></svg><h3>Quantity options</h3><p>Pick a weight, piece count or drink serving.</p></div>
+        <div class="principle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h13m-4-4 4 4-4 4M20 5v14"/></svg><h3>Three ways to order</h3><p>Dine-in, kerbside pickup and delivery.</p></div>
+        <div class="principle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg><h3>Easy to find</h3><p>Next to Jaldhara Chowkdi, inside Maurya Residency.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="band">
+    <div class="wrap proof">
+      <div><b>4.8 ★</b><span>Google rating</span></div>
+      <div><b>26</b><span>Google reviews</span></div>
+      <div><b>Fresh</b><span>Made for you</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="page" id="page-visit" data-page="visit" hidden>
+  <div class="wrap page-hero">
+    <p class="eyebrow">Visit us</p>
+    <h1>Come hungry.</h1>
+    <p>Shop No. 3-4, Maurya Residency, near Jaldhara Chowkdi, GIDC, Ankleshwar.</p>
+    <div class="cta-row"><a class="btn primary" data-dir target="_blank" rel="noopener" href="#">Get Directions</a><a class="btn" href="tel:+919428689920">Call Now</a></div>
+  </div>
+  <div class="section" style="padding-top:24px">
+    <div class="wrap visit-grid">
+      <div class="info">
+        <div class="info-card"><h3>Address</h3><div class="val" id="addrText">Shop No. 3-4, Maurya Residency, near Jaldhara Chowkdi, GIDC, Ankleshwar GIDC, Ankleshwar, Gujarat 393002</div><div class="row"><button class="btn small" data-copy="#addrText" type="button">Copy address</button></div></div>
+        <div class="info-card"><h3>Phone</h3><div class="val" id="phoneText">094286 89920</div><div class="row"><a class="btn primary small" href="tel:+919428689920">Call Now</a><button class="btn small" data-copy="#phoneText" type="button">Copy number</button></div></div>
+        <div class="info-card"><h3>Hours</h3><div class="val">Closes 12 pm · Reopens 3:30 pm</div><p style="color:var(--muted);font-size:.92rem">Please call to confirm today's timings.</p></div>
+        <div class="info-card"><h3>Services</h3><div class="badges"><span>Dine-in</span><span>Kerbside pickup</span><span>Delivery</span></div></div>
+      </div>
+      <aside class="place" aria-label="Location">
+        <svg class="roads" viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M-10 90 C120 70 200 140 410 110"/><path d="M-10 250 C90 230 170 300 410 260"/><path d="M90 -10 C110 120 80 240 130 430"/><path d="M290 -10 C270 140 320 260 280 430"/><path d="M-10 350 L410 330" stroke-dasharray="6 8"/><circle cx="200" cy="200" r="64"/><circle cx="200" cy="200" r="120" stroke-dasharray="3 9"/></svg>
+        <div><p class="eyebrow">Find the shop</p></div>
+        <div style="display:grid;gap:12px">
+          <div class="where">Near Jaldhara Chowkdi,<br>Maurya Residency</div>
+          <p>GIDC, Ankleshwar, Gujarat 393002</p>
+        </div>
+        <div class="cta-row"><a class="btn primary" data-dir target="_blank" rel="noopener" href="#">Open in Google Maps</a></div>
+      </aside>
+    </div>
+  </div>
+  <div class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">How to get here</p><h2>Three landmarks to follow.</h2></div>
+      <ul class="tips">
+        <li><h3>Head for GIDC</h3><p>We are in Ankleshwar GIDC, the industrial estate area of the city.</p></li>
+        <li><h3>Look for Jaldhara Chowkdi</h3><p>The shop is near this junction. Ask anyone nearby if you lose the way.</p></li>
+        <li><h3>Find Maurya Residency</h3><p>Shop No. 3-4 sits in the Maurya Residency building. Call us if you need help.</p></li>
+      </ul>
+    </div>
+  </div>
+  <div class="section" style="padding-top:0"><div class="wrap" data-insta></div></div>
+  <div class="band section closing">
+    <div class="wrap">
+      <p class="eyebrow">Pickup or delivery</p>
+      <h2>Not coming in today?</h2>
+      <div class="cta-row"><a class="btn primary" data-needs="zomato" data-zomato target="_blank" rel="noopener" href="#" hidden>Order on Zomato</a><a class="btn" href="tel:+919428689920">Call for pickup</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="name">Shree Umiyaji Farshan</div>
+        <p>Chandukaka Gathiyawala<br>Shop No. 3-4, Maurya Residency, near Jaldhara Chowkdi, GIDC, Ankleshwar GIDC, Ankleshwar, Gujarat 393002</p>
+        <p style="margin-top:10px">094286 89920 · Closes 12 pm, reopens 3:30 pm</p>
+        <div class="badges" style="margin-top:16px"><span>Dine-in</span><span>Kerbside pickup</span><span>Delivery</span></div>
+      </div>
+      <div><h4>Explore</h4><div class="links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About Us</a><a href="#visit">Visit Us</a></div></div>
+      <div><h4>Find us online</h4><div class="links"><a data-needs="zomato" data-zomato target="_blank" rel="noopener" href="#" hidden>Zomato</a><a data-needs="insta" data-insta-link target="_blank" rel="noopener" href="#" hidden>Instagram</a><a data-reviews target="_blank" rel="noopener" href="#">Google reviews</a><a data-dir target="_blank" rel="noopener" href="#">Google Maps</a></div></div>
+    </div>
+    <div class="legal">© <span id="yr">2026</span> Shree Umiyaji Farshan (Chandukaka Gathiyawala). Photos are illustrative.</div>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Quick actions">
+  <a class="primary" href="tel:+919428689920">Call</a>
+  <a data-dir target="_blank" rel="noopener" href="#">Directions</a>
+  <a href="#menu">Menu</a>
+</nav>
+
+<script>
+/* ---- Edit these three things to update the whole site ---- */
+var LINKS = { zomato: "", instagram: "" };            // paste the Zomato and Instagram URLs here
+var MENU = {
+  veg: [
+    ["Fafda","fafda"],["Jalebi","jalebi"],["Gathiya","gathiya"],["Sev","sev"],["Mixture (Chevdo)","mixture"],
+    ["Papdi","papdi"],["Masala Papdi","masala-papdi"],["Poha","poha"],["Methi Thepla","thepla"],["Samosa","samosa"],
+    ["Khaman","khaman"],["Dhokla","dhokla"],["Bajra Rotlo","rotlo"],["Ghee Roti","ghee-roti"],["Masala Fries","fries"],["Dry Fruit Sweet","sweet"]
+  ],
+  nonveg: [],
+  beverages: ["Chai","Chaas (Buttermilk)"]
+};
+var PREVIEW = ["Fafda","Jalebi","Gathiya","Mixture (Chevdo)","Khaman","Poha"];
+/* ----------------------------------------------------------- */
+
+var ADDR = "Shree Umiyaji Farshan (Chandukaka Gathiyawala), Shop No. 3-4, Maurya Residency, near Jaldhara Chowkdi, GIDC, Ankleshwar GIDC, Ankleshwar, Gujarat 393002";
+var DIR = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(ADDR);
+var SEARCH = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ADDR);
+var $ = function(s,r){return (r||document).querySelector(s)};
+var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var fine = window.matchMedia("(hover:hover) and (pointer:fine)").matches;
+
+/* links */
+$$("[data-dir]").forEach(function(a){a.href = DIR});
+$$("[data-reviews]").forEach(function(a){a.href = SEARCH});
+if (LINKS.zomato) { $$("[data-zomato]").forEach(function(a){a.href = LINKS.zomato; a.hidden = false}); $$("[data-nozomato]").forEach(function(a){a.hidden = true}); }
+if (LINKS.instagram) { $$("[data-insta-link]").forEach(function(a){a.href = LINKS.instagram; a.hidden = false}); }
+$("#yr").textContent = new Date().getFullYear();
+
+/* stars */
+(function(){
+  var s = "";
+  for (var i = 0; i < 5; i++) s += '<svg width="22" height="22" viewBox="0 0 24 24" fill="#E0A21B" aria-hidden="true"><path d="m12 2.800 2.800 5.800 6.300.9-4.600 4.400 1.100 6.300L12 17.200l-5.600 3 1.100-6.300L2.900 9.500l6.300-.9z"/></svg>';
+  $("#stars").innerHTML = s;
+})();
+
+/* marquee */
+(function(){
+  var names = MENU.veg.map(function(m){return m[0]});
+  var html = names.map(function(n){return "<span>"+n+"</span>"}).join("");
+  $("#marquee").innerHTML = html + html;
+})();
+
+/* cards */
+function card(name, img, veg){
+  return '<a class="card tilt" role="presentation" tabindex="-1"><div class="ph"><img src="image/'+img+'.webp" alt="'+name+', Gujarati farsan" loading="lazy" width="480" height="520"></div><div class="nm"><i class="dot'+(veg?'':' nv')+'" aria-hidden="true"></i><span>'+name+'</span></div></a>';
+}
+$("#previewCards").innerHTML = PREVIEW.map(function(n){
+  var m = MENU.veg.filter(function(x){return x[0]===n})[0]; return m ? card(m[0], m[1], true) : "";
+}).join("");
+
+/* Instagram sections */
+var TILES = ["dhokla","fries","masala-papdi","poha","khaman","sev"];
+$$("[data-insta]").forEach(function(el){
+  var tag = LINKS.instagram ? "a" : "div";
+  var attrs = LINKS.instagram ? ' href="'+LINKS.instagram+'" target="_blank" rel="noopener"' : "";
+  el.innerHTML =
+    '<div class="insta-head"><div><p class="eyebrow">Instagram</p><h2>Follow the farsan.</h2></div>' +
+    (LINKS.instagram ? '<a class="btn primary" target="_blank" rel="noopener" href="'+LINKS.instagram+'">Follow on Instagram</a>' : '') + '</div>' +
+    '<div class="insta-grid">' + TILES.map(function(t){
+      return '<'+tag+attrs+(LINKS.instagram?' aria-label="Open Instagram"':'')+'><img src="image/'+t+'.webp" alt="" loading="lazy" width="480" height="451"></'+tag+'>';
+    }).join("") + '</div>';
+});
+
+/* menu page */
+var state = { tab: "food", sub: "veg", q: "" };
+function movePill(seg){
+  var pill = $(".pill", seg), sel = $('button[aria-selected="true"]', seg);
+  if (!sel || !sel.offsetWidth) return;
+  pill.style.width = sel.offsetWidth + "px";
+  pill.style.transform = "translateX(" + (sel.offsetLeft - 5) + "px)";
+}
+function renderMenu(){
+  var q = state.q.trim().toLowerCase();
+  var list = MENU[state.sub].filter(function(m){return m[0].toLowerCase().indexOf(q) > -1});
+  var cards = $("#foodCards"), empty = $("#foodEmpty");
+  cards.innerHTML = list.map(function(m){return orderCard(m[0], m[1], "food", state.sub === "veg")}).join("");
+  empty.hidden = list.length > 0;
+  if (!list.length) empty.textContent = q ? "Nothing matches that search." : "No non-veg items are listed at the moment. Call us to ask.";
+  $("#count").textContent = list.length + (list.length === 1 ? " dish" : " dishes");
+  var bev = MENU.beverages.filter(function(b){return b.toLowerCase().indexOf(q) > -1});
+  $("#bevCards").innerHTML = bev.map(function(b){return orderCard(b, "", "beverages", true)}).join("");
+  $("#bevEmpty").hidden = bev.length > 0;
+  $("#countBev").textContent = bev.length + (bev.length === 1 ? " drink" : " drinks");
+  bindTilt();
+}
+function escapeHTML(value){
+  return value.replace(/[&<>"']/g, function(char){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char];
+  });
+}
+function quantityFor(name, category){
+  if (category === "beverages") {
+    var serving = name.toLowerCase().indexOf("chaas") > -1 ? "glass" : "cup";
+    return {label:"Serving", options:[1,2,5,10].map(function(n){return n === 1 ? "1 " + serving : n + (serving === "glass" ? " glasses" : " cups")})};
+  }
+  if (/(khaman|dhokla|thepla|samosa|rotlo|roti)/i.test(name)) {
+    return {label:"Pieces", options:[1,2,5,10].map(function(n){return n + " piece" + (n === 1 ? "" : "s")})};
+  }
+  if (/fries/i.test(name)) {
+    return {label:"Portion", options:[1,2,3,5].map(function(n){return n + " portion" + (n === 1 ? "" : "s")})};
+  }
+  return {label:"Weight", options:["50g","100g","250g","500g","1kg"]};
+}
+function orderCard(name, image, category, veg){
+  var escapedName = escapeHTML(name), quantity = quantityFor(name, category);
+  var picture = image ? '<div class="ph"><img src="image/'+escapeHTML(image)+'.webp" alt="'+escapedName+', Gujarati farsan" loading="lazy" width="480" height="520"></div>' : "";
+  return '<article class="card order-card tilt'+(image ? "" : " no-photo")+'">'+picture+
+    '<div class="nm"><i class="dot'+(veg?'':' nv')+'" aria-hidden="true"></i><span>'+escapedName+'</span></div>'+
+    '<div class="order-controls"><div class="order-fields"><label>'+quantity.label+
+    '<select class="order-option" aria-label="'+escapedName+' '+quantity.label+'">'+quantity.options.map(function(option){return '<option>'+option+'</option>'}).join("")+'</select></label>'+
+    '<label>How many?<input class="order-count" type="number" min="1" step="1" value="1" inputmode="numeric" aria-label="How many '+escapedName+'"></label></div>'+
+    '<button class="btn primary small" type="button" data-add="'+escapedName+'">Add to order</button></div></article>';
+}
+var cart = [];
+function renderCart(){
+  var list = $("#cartItems");
+  list.innerHTML = cart.map(function(item, index){
+    return '<li class="cart-item"><div><strong>'+escapeHTML(item.name)+'</strong><span>'+escapeHTML(item.option)+' × '+item.count+'</span></div><button class="btn small" type="button" data-remove="'+index+'" aria-label="Remove '+escapeHTML(item.name)+'">Remove</button></li>';
+  }).join("");
+  $("#cartEmpty").hidden = cart.length > 0;
+  $("#cartCount").textContent = cart.length + (cart.length === 1 ? " selection" : " selections");
+  $("#orderStatus").textContent = "";
+}
+function handleAddToOrder(event){
+  var button = event.target.closest("[data-add]");
+  if (!button) return;
+  var cardEl = button.closest(".order-card"), countInput = $(".order-count", cardEl);
+  var count = Number(countInput.value);
+  if (!Number.isSafeInteger(count) || count < 1) {
+    countInput.setCustomValidity("Enter a whole number greater than zero.");
+    countInput.reportValidity();
+    return;
+  }
+  countInput.setCustomValidity("");
+  var option = $(".order-option", cardEl).value, name = button.dataset.add;
+  var existing = cart.filter(function(item){return item.name === name && item.option === option})[0];
+  if (existing && !Number.isSafeInteger(existing.count + count)) {
+    $("#orderStatus").textContent = "Please enter a smaller quantity for this item.";
+    return;
+  }
+  if (existing) existing.count += count;
+  else cart.push({name:name, option:option, count:count});
+  countInput.value = "1";
+  renderCart();
+}
+$("#foodCards").addEventListener("click", handleAddToOrder);
+$("#bevCards").addEventListener("click", handleAddToOrder);
+$("#cartItems").addEventListener("click", function(event){
+  var button = event.target.closest("[data-remove]");
+  if (!button) return;
+  cart.splice(Number(button.dataset.remove), 1);
+  renderCart();
+});
+$("#orderType").addEventListener("change", function(){
+  var delivery = this.value === "Delivery";
+  $("#addressField").hidden = !delivery;
+  $("#deliveryAddress").required = delivery;
+});
+$("#whatsappOrder").addEventListener("click", function(event){
+  var form = $("#checkoutForm");
+  if (!cart.length) {
+    event.preventDefault();
+    $("#orderStatus").textContent = "Please add at least one menu item first.";
+    return;
+  }
+  if (!form.reportValidity()) {
+    event.preventDefault();
+    return;
+  }
+  var name = $("#customerName").value.trim();
+  var type = $("#orderType").value;
+  var address = $("#deliveryAddress").value.trim();
+  var lines = cart.map(function(item){return "- "+item.name+": "+item.option+" × "+item.count});
+  var message = "Hello, I would like to place an order from Shree Umiyaji Farshan.\nName: "+name+
+    "\nOrder type: "+type+(type === "Delivery" ? "\nDelivery address: "+address : "")+
+    "\nItems:\n"+lines.join("\n")+
+    "\nPlease confirm availability and send my final bill/total and payment details here on WhatsApp. I will share my payment confirmation in this chat after paying.";
+  this.href = "https://wa.me/919428689920?text="+encodeURIComponent(message);
+  $("#orderStatus").textContent = "WhatsApp will open with your order message. Review it and tap Send; the shop will reply here with your bill and payment details.";
+});
+function setTab(t){
+  state.tab = t;
+  $("#panel-food").hidden = t !== "food";
+  $("#panel-bev").hidden = t !== "beverages";
+  $$("#segTop button").forEach(function(b){b.setAttribute("aria-selected", b.dataset.tab === t ? "true" : "false")});
+  movePill($("#segTop"));
+}
+$$("#segTop button").forEach(function(b){b.addEventListener("click", function(){
+  location.hash = b.dataset.tab === "food" ? "menu" : "beverages";
+})});
+$$("#segSub button").forEach(function(b){b.addEventListener("click", function(){
+  state.sub = b.dataset.sub;
+  $$("#segSub button").forEach(function(x){x.setAttribute("aria-selected", x === b ? "true" : "false")});
+  movePill($("#segSub")); renderMenu();
+})});
+$("#q").addEventListener("input", function(e){state.q = e.target.value; renderMenu()});
+
+/* tilt */
+function bindTilt(){
+  if (reduce || !fine) return;
+  $$(".tilt").forEach(function(el){
+    if (el._t) return; el._t = 1;
+    el.addEventListener("pointermove", function(e){
+      var r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      el.style.transform = "perspective(800px) rotateX(" + (-y*6).toFixed(2) + "deg) rotateY(" + (x*6).toFixed(2) + "deg)";
+    });
+    el.addEventListener("pointerleave", function(){el.style.transform = ""});
+  });
+}
+var stage = $("#stage");
+if (stage && !reduce && fine) {
+  stage.addEventListener("pointermove", function(e){
+    var r = stage.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    stage.firstElementChild.style.setProperty("--ry", (x*10).toFixed(2) + "deg");
+    stage.firstElementChild.style.setProperty("--rx", (-y*8).toFixed(2) + "deg");
+  });
+  stage.addEventListener("pointerleave", function(){
+    stage.firstElementChild.style.setProperty("--ry", "0deg"); stage.firstElementChild.style.setProperty("--rx", "0deg");
+  });
+}
+
+/* copy */
+$$("[data-copy]").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var el = $(btn.dataset.copy), txt = el.textContent.trim(), label = btn.textContent;
+    function done(){btn.textContent = "Copied"; setTimeout(function(){btn.textContent = label}, 1800)}
+    function fallback(){
+      var r = document.createRange(); r.selectNodeContents(el);
+      var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = "Selected, press copy"; setTimeout(function(){btn.textContent = label}, 2400);
+    }
+    try { navigator.clipboard.writeText(txt).then(done, fallback); } catch (e) { fallback(); }
+  });
+});
+
+/* drawer */
+var drawer = $("#drawer"), mb = $("#menuBtn");
+function closeDrawer(){drawer.classList.remove("open"); mb.setAttribute("aria-expanded","false"); mb.setAttribute("aria-label","Open menu")}
+mb.addEventListener("click", function(){
+  var open = !drawer.classList.contains("open");
+  drawer.classList.toggle("open", open); mb.setAttribute("aria-expanded", open); mb.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+});
+$$("#drawer a").forEach(function(a){a.addEventListener("click", closeDrawer)});
+
+/* router */
+var ROUTES = { home:"home", menu:"menu", beverages:"menu", about:"about", visit:"visit" };
+var last = null;
+function route(){
+  var h = (location.hash || "#home").slice(1); if (!ROUTES[h]) h = "home";
+  var page = ROUTES[h];
+  $$(".page").forEach(function(p){p.hidden = p.dataset.page !== page});
+  $$(".nav a").forEach(function(a){ if (a.dataset.route === page) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  if (page === "menu") { setTab(h === "beverages" ? "beverages" : "food"); renderMenu(); movePill($("#segSub")); }
+  if (last !== page) { window.scrollTo(0,0); last = page; }
+  closeDrawer();
+  var titles = {home:"Shree Umiyaji Farshan", menu:"Menu · Shree Umiyaji Farshan", about:"About Us · Shree Umiyaji Farshan", visit:"Visit Us · Shree Umiyaji Farshan"};
+  document.title = titles[page];
+}
+window.addEventListener("hashchange", route);
+window.addEventListener("resize", function(){movePill($("#segTop")); movePill($("#segSub"))});
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){movePill($("#segTop")); movePill($("#segSub"))});
+route(); bindTilt();
+</script>
+</body>
+</html>
